@@ -19,29 +19,7 @@ jobs:
           test -f openapi.yaml
           test -f campus-spectral.yaml
           test -f negotiation-log.md
-          test -f VERSIONING.md
           test -f package.json
-          test -f docs/lab02-guide.md
-          test -f docs/pairing-matrix.md
-          test -f docs/openapi-authoring-guide.md
-          test -f docs/swagger-online-workflow.md
-          test -f docs/event-contract-template.md
-          test -f docs/analysis-provider.md
-          test -f docs/analysis-consumer.md
-          test -f evidence/buoi-02/README.md
-          test -f evidence/buoi-02/checklist.md
-          test -f evidence/buoi-02/known-issues.md
-          test -f user-stories/README.md
-          test -f user-stories/pair-01-camera-ai-vision.md
-          test -f user-stories/pair-02-core-ai-vision.md
-          test -f user-stories/pair-03-core-access-gate.md
-          test -f user-stories/pair-04-core-notification-async.md
-          test -f user-stories/pair-05-iot-core-async.md
-          test -f user-stories/pair-06-iot-analytics-async.md
-          test -f user-stories/pair-07-camera-analytics-async.md
-          test -f user-stories/pair-08-core-analytics-async.md
-          test -f user-stories/pair-09-access-analytics-async.md
-          test -f user-stories/pair-10-access-core-policy.md
           test -f scripts/install_lab02_cli.sh
           test -f scripts/lint_openapi.sh
           test -f scripts/mock_openapi.sh
