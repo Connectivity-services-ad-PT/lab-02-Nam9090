@@ -4,6 +4,10 @@ on:
   push:
   pull_request:
 
+# Thêm cấu hình này để ép buộc hệ thống chạy Node.js 24, sửa triệt để cảnh báo cũ
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   structure-check:
     runs-on: ubuntu-latest
@@ -13,6 +17,24 @@ jobs:
       - name: Check required files
         run: |
           test -f README.md
+          test -f openapi.yaml
+          test -f campus-spectral.yaml
+          test -f negotiation-log.md
+          test -f VERSIONING.md
+          test -f package.json
+          test -f docs/lab02-guide.md
+          test -f docs/pairing-matrix.md
+          test -f docs/openapi-authoring-guide.md
+          test -f docs/swagger-online-workflow.md
+          test -f docs/event-contract-template.md
+          test -f docs/analysis-provider.md
+          test -f docs/analysis-consumer.md
+          test -f evidence/buoi-02/README.md
+          test -f evidence/buoi-02/checklist.md
+          test -f evidence/buoi-02/known-issues.md
+          test -f user-stories/README.md
+          test -f user-stories/pair-01-camera-ai-vision.md
+          test -f user-stories/pair-02-core-ai-vision.md
           test -f openapi.yaml
           test -f campus-spectral.yaml
           test -f negotiation-log.md
